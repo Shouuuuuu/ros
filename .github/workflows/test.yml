@@ -12,4 +12,4 @@ rsync -av ./ /root/ros2_ws/src/mypkg/
 cd /root/ros2_ws
 rosdep update
 rosdep install -i --form-path src --rosdistro humble -y
-bash -xv ./src/mypkg/test/test.bash /root9
+bash -xv ./src/mypkg/test/test.bash /root
