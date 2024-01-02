@@ -26,5 +26,5 @@ setup(
             'talker = mypkg.talker:main',
             'listener = mypkg.listener:main',
         ],
-    },
+    },  
 )
