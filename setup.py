@@ -1,13 +1,13 @@
 from setuptools import setup
 import os
-from glob import glob
+from setuptools import find?packages, setup
 
 package_name = 'mypkg'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],
+    packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -16,8 +16,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='shou',
-    maintainer_email='shoma@hogehoge.com',
+    maintainer='Shoma Takatori',
+    maintainer_email='Kmst.6563@icloud.com',
     description='a package for practice',
     license='BSD-3-Clause',
     tests_require=['pytest'],
